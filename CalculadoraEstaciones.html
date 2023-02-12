@@ -1,0 +1,53 @@
+<!doctype html>
+ <html>
+ <head>
+
+   <head>
+      <meta charset="utf-8"/>
+      <title>Tarea 1</title>    
+   </head>
+  
+<body>
+
+   <body>
+   	<center>
+   	  <label>Ingrese el número de un mes</label>
+      <input type="text" id="mes" value="">
+      
+      <input type="button" value="go" onclick="validar();">
+  </center>
+   </body>
+  
+ </html>
+ <script>
+ 	function validar(){
+ 	var mes = document.getElementById("mes").value;
+
+     if((mes < 1) || (mes > 12)){
+     	alert("Valor invalido");
+     	document.getElementById("mes").value = "";
+     }
+     else{
+     	
+     	if((mes ==1) || (mes == 2)){ alert("Es Invierno"); datos();}
+     	
+     	if((mes >2) && (mes < 6)){ alert("Es Primavera"); datos();}
+
+     	if((mes >5) && (mes < 9)){ alert("Es Verano"); datos();}
+
+     	if((mes >8) && (mes < 12)){ alert("Es Otoño"); datos();}
+
+        if(mes ==12){ alert("Es Invierno"); datos();}
+
+     }
+
+     function datos(){
+       
+       alert("Alumno: Brandon Herrera \n "+ "Carnet: 22011434");
+
+     }
+
+
+ 	
+ }
+ </script>
